@@ -1,0 +1,37 @@
+{
+    "name": "dazzlesoftware/controller",
+    "type": "library",
+    "description": "Dazzle Controller Package",
+    "keywords": ["dazzle", "framework", "controller"],
+    "homepage": "https://github.com/dazzle-framework/controller",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/application": "^1.0",
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/input": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "dazzlesoftware/application": "The dazzlesoftware/application package is required to use Dazzle\\Controller\\AbstractController",
+        "dazzlesoftware/input": "The dazzlesoftware/input package is required to use Dazzle\\Controller\\AbstractController"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Controller\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Controller\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
